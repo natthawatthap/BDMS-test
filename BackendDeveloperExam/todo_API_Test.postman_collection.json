@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "d928e19c-9c50-4dcb-9ed9-25771bc4a4cc",
+		"name": "Todo API Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET All Todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/todos",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Todo By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/todos/1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"todos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Create Todo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL}}/api/todos",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"todos"
+					]
+				},
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"New Todo\"\n}"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Update Todo",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseURL}}/api/todos/1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"todos",
+						"1"
+					]
+				},
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Updated Todo\",\n\t\"completed\": true\n}"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Todo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/todos/1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"todos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
