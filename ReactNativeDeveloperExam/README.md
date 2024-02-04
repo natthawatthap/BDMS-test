@@ -4,6 +4,6 @@ Implement application by using React-native with Typescript with following requi
 - Display to Leader board
 - publish on git repository
 
-
+# How to run
 npm install
 npm start

@@ -17,7 +17,7 @@ Constraints:
 * 0 <= strs[i].length <= 200
 * strs[i] consists of only lower-case English letters.
 
-
+# How to run
 npm install
 npm start
 npm test
